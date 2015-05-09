@@ -1,0 +1,6 @@
+[submodule "Layout/Libraries/Ava"]
+	path = Layout/Libraries/Ava
+	url = https://github.com/Upuaut/Eagle-Libraries.git
+[submodule "Layout/Libraries/SparkFun"]
+	path = Layout/Libraries/SparkFun
+	url = https://github.com/sparkfun/SparkFun-Eagle-Libraries.git
