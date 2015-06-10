@@ -10299,6 +10299,69 @@ Source: Epson Toyocom</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="phil-ic">
+<packages>
+<package name="SOT23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SIP32509DT-T1-GE3">
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="IN" x="-15.24" y="2.54" length="middle"/>
+<pin name="EN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SIP32509DT-T1-GE3">
+<description>1.1 V to 5.5 V, Slew Rate Controlled Load Switch</description>
+<gates>
+<gate name="G$1" symbol="SIP32509DT-T1-GE3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN" pad="5 6"/>
+<connect gate="G$1" pin="OUT" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="OC_FARNELL" value="2361513"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10332,10 +10395,8 @@ Source: Epson Toyocom</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0603" value="4u7"/>
-<part name="VCC3" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="VCC4" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
@@ -10387,6 +10448,14 @@ Source: Epson Toyocom</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="C28" library="resistor" deviceset="C-EU" device="C0402" value="47n"/>
 <part name="C29" library="resistor" deviceset="C-EU" device="C0402" value="47n"/>
+<part name="U$7" library="phil-ic" deviceset="SIP32509DT-T1-GE3" device=""/>
+<part name="VCC6" library="supply1" deviceset="VCCIO" device=""/>
+<part name="C30" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="C31" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10406,7 +10475,7 @@ Source: Epson Toyocom</description>
 <instance part="LED1" gate="G$1" x="38.1" y="-22.86"/>
 <instance part="LED2" gate="G$1" x="45.72" y="-22.86"/>
 <instance part="LED3" gate="G$1" x="53.34" y="-22.86"/>
-<instance part="LED4" gate="G$1" x="63.5" y="-22.86"/>
+<instance part="LED4" gate="G$1" x="60.96" y="-22.86"/>
 <instance part="U$6" gate="A" x="5.08" y="86.36"/>
 <instance part="L1" gate="G$1" x="-73.66" y="33.02" rot="R90"/>
 <instance part="GND3" gate="1" x="-60.96" y="2.54"/>
@@ -10416,10 +10485,8 @@ Source: Epson Toyocom</description>
 <instance part="GND4" gate="1" x="-88.9" y="45.72"/>
 <instance part="C2" gate="G$1" x="-78.74" y="55.88"/>
 <instance part="C3" gate="G$1" x="-68.58" y="55.88"/>
-<instance part="VCC3" gate="G$1" x="-15.24" y="91.44"/>
 <instance part="GND5" gate="1" x="-15.24" y="76.2"/>
 <instance part="GND6" gate="1" x="81.28" y="78.74"/>
-<instance part="VCC4" gate="G$1" x="78.74" y="99.06"/>
 <instance part="GND7" gate="1" x="-5.08" y="-30.48"/>
 <instance part="+3V1" gate="G$1" x="30.48" y="91.44"/>
 <instance part="+3V2" gate="G$1" x="-5.08" y="-15.24"/>
@@ -10430,7 +10497,7 @@ Source: Epson Toyocom</description>
 <instance part="VCC5" gate="G$1" x="-43.18" y="63.5"/>
 <instance part="C4" gate="G$1" x="-53.34" y="12.7"/>
 <instance part="L2" gate="G$1" x="-68.58" y="25.4" rot="R90"/>
-<instance part="C5" gate="G$1" x="-73.66" y="12.7"/>
+<instance part="C5" gate="G$1" x="-83.82" y="35.56"/>
 <instance part="C6" gate="G$1" x="76.2" y="17.78"/>
 <instance part="C7" gate="G$1" x="83.82" y="17.78"/>
 <instance part="C8" gate="G$1" x="91.44" y="17.78"/>
@@ -10471,6 +10538,14 @@ Source: Epson Toyocom</description>
 <instance part="GND16" gate="1" x="243.84" y="68.58"/>
 <instance part="C28" gate="G$1" x="175.26" y="93.98"/>
 <instance part="C29" gate="G$1" x="182.88" y="93.98"/>
+<instance part="U$7" gate="G$1" x="-43.18" y="83.82"/>
+<instance part="VCC6" gate="G$1" x="-60.96" y="91.44"/>
+<instance part="C30" gate="G$1" x="-20.32" y="86.36"/>
+<instance part="R3" gate="G$1" x="38.1" y="-12.7" rot="R90"/>
+<instance part="R4" gate="G$1" x="45.72" y="-12.7" rot="R90"/>
+<instance part="R5" gate="G$1" x="53.34" y="-12.7" rot="R90"/>
+<instance part="R6" gate="G$1" x="60.96" y="-12.7" rot="R90"/>
+<instance part="C31" gate="G$1" x="73.66" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -10541,9 +10616,6 @@ Source: Epson Toyocom</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="7.62" x2="-53.34" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-53.34" y="5.08"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="7.62" x2="-73.66" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="5.08" x2="-60.96" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -10563,12 +10635,22 @@ Source: Epson Toyocom</description>
 <wire x1="-15.24" y1="78.74" x2="-15.24" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="A" pin="GND"/>
 <wire x1="-15.24" y1="81.28" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="GND"/>
+<wire x1="-15.24" y1="81.28" x2="-20.32" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-15.24" y="81.28"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="81.28" x2="-27.94" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-20.32" y="81.28"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="81.28" y1="81.28" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="GND"/>
 <wire x1="81.28" y1="83.82" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="83.82" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="83.82" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<junction x="81.28" y="83.82"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="6"/>
@@ -10585,7 +10667,7 @@ Source: Epson Toyocom</description>
 <wire x1="45.72" y1="-27.94" x2="53.34" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="45.72" y="-27.94"/>
 <pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="53.34" y1="-27.94" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-27.94" x2="60.96" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="53.34" y="-27.94"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <junction x="43.18" y="-27.94"/>
@@ -10723,6 +10805,10 @@ Source: Epson Toyocom</description>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="27.94" x2="-78.74" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="27.94" x2="-78.74" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="33.02" x2="-78.74" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-78.74" y="33.02"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-78.74" y1="38.1" x2="-83.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCCIO" class="0">
@@ -10746,17 +10832,6 @@ Source: Epson Toyocom</description>
 <junction x="-78.74" y="60.96"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="A" pin="VIN"/>
-<pinref part="VCC3" gate="G$1" pin="VCCIO"/>
-<wire x1="-12.7" y1="86.36" x2="-15.24" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="86.36" x2="-15.24" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="VCC4" gate="G$1" pin="VCCIO"/>
-<pinref part="U2" gate="A" pin="IN"/>
-<wire x1="78.74" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="1" pin="VCCIO"/>
 <wire x1="-40.64" y1="55.88" x2="-43.18" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="VCC5" gate="G$1" pin="VCCIO"/>
@@ -10765,6 +10840,12 @@ Source: Epson Toyocom</description>
 <wire x1="-43.18" y1="58.42" x2="-43.18" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="58.42" x2="-43.18" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-43.18" y="58.42"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="IN"/>
+<pinref part="VCC6" gate="G$1" pin="VCCIO"/>
+<wire x1="-58.42" y1="86.36" x2="-60.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="86.36" x2="-60.96" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10898,10 +10979,11 @@ Source: Epson Toyocom</description>
 <segment>
 <pinref part="JP2" gate="G$1" pin="VBUS"/>
 <pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="-86.36" y1="25.4" x2="-73.66" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-73.66" y1="15.24" x2="-73.66" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-73.66" y="25.4"/>
+<wire x1="-86.36" y1="25.4" x2="-83.82" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="-83.82" y1="25.4" x2="-73.66" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="30.48" x2="-83.82" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-83.82" y="25.4"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -11214,6 +11296,72 @@ Source: Epson Toyocom</description>
 <pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="71.12" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
 <junction x="226.06" y="71.12"/>
+</segment>
+</net>
+<net name="USB_NSLEEP" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="CBUS4"/>
+<wire x1="-12.7" y1="25.4" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="-10.16" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="EN"/>
+<wire x1="-58.42" y1="81.28" x2="-76.2" y2="81.28" width="0.1524" layer="91"/>
+<label x="-76.2" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC_LOGIC" class="0">
+<segment>
+<pinref part="U$6" gate="A" pin="VIN"/>
+<wire x1="-12.7" y1="86.36" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="88.9" x2="-20.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="OUT"/>
+<wire x1="-20.32" y1="88.9" x2="-25.4" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="88.9" x2="-27.94" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="88.9" x2="-27.94" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-20.32" y="88.9"/>
+<wire x1="-25.4" y1="88.9" x2="-25.4" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-25.4" y="88.9"/>
+<wire x1="-25.4" y1="96.52" x2="-12.7" y2="96.52" width="0.1524" layer="91"/>
+<label x="-22.86" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="IN"/>
+<wire x1="58.42" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<label x="60.96" y="96.52" size="1.778" layer="95"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="93.98" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<junction x="73.66" y="96.52"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="38.1" y1="-17.78" x2="38.1" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="45.72" y1="-17.78" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="53.34" y1="-17.78" x2="53.34" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="60.96" y1="-17.78" x2="60.96" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
