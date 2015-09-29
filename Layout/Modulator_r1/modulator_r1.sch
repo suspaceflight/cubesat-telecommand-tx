@@ -11741,12 +11741,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="160.02" y1="53.34" x2="172.72" y2="53.34" width="0.1524" layer="91"/>
 <label x="162.56" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="PB7"/>
+<wire x1="25.4" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="12.7" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CC_IO2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="GPIO2"/>
 <wire x1="160.02" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
 <label x="162.56" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PB6"/>
+<wire x1="25.4" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<label x="12.7" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CC_IO0" class="0">
