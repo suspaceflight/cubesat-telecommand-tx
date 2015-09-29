@@ -11755,12 +11755,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="160.02" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
 <label x="162.56" y="58.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="PB1"/>
+<wire x1="25.4" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
+<label x="12.7" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CC_NRESET" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="NRESET"/>
 <wire x1="160.02" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
 <label x="162.56" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="PB0"/>
+<wire x1="25.4" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<label x="12.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
