@@ -8210,7 +8210,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="TPS79933QDDCRQ1" x="19.29" y="33.33" size="1.524" layer="27" font="fixed" rot="R270" display="off"/>
 <attribute name="SUPPLIER" value="Texas Instruments" x="19.29" y="33.33" size="1.524" layer="27" font="fixed" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="-" x="19.29" y="33.33" size="1.524" layer="27" font="fixed" rot="R270" display="off"/>
-<attribute name="NAME" x="16.73" y="33.8844" size="0.8128" layer="25" ratio="10" rot="SR270"/>
+<attribute name="NAME" x="21.1115" y="33.9479" size="0.8128" layer="25" ratio="10" rot="SR270"/>
 </element>
 <element name="LED1" library="led" package="CHIPLED_1206" value="" x="59.42" y="15.59" smashed="yes" rot="R270">
 <attribute name="NAME" x="58.05" y="13.76" size="0.8128" layer="25"/>
@@ -8309,7 +8309,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="7.655" y="28.078" size="0.8128" layer="25" rot="R180"/>
 </element>
 <element name="C19" library="resistor" package="C0402" value="6p2" x="8.455" y="31.185" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.833" y="32.75" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="8.833" y="32.623" size="0.8128" layer="25" rot="R90"/>
 </element>
 <element name="L6" library="resistor" package="R0402" value="56n" x="15.44" y="26.235" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.002" y="25.97" size="0.8128" layer="25" rot="R270"/>
@@ -8443,10 +8443,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="37.83" y="17.851" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="43.33" y="14.903" size="0.0254" layer="27"/>
 </element>
-<element name="3V3_RF" library="testpad" package="B2,54" value="PTR1B2,54" x="15.1" y="33.9" smashed="yes">
-<attribute name="TP_SIGNAL_NAME" value="" x="13.83" y="30.725" size="1" layer="37"/>
-<attribute name="NAME" x="9.53" y="35.451" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="13.83" y="32.503" size="0.0254" layer="27"/>
+<element name="3V3_RF" library="testpad" package="B2,54" value="PTR1B2,54" x="12.4965" y="32.63" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="11.2265" y="29.455" size="1" layer="37"/>
+<attribute name="NAME" x="9.149" y="34.689" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="11.2265" y="31.233" size="0.0254" layer="27"/>
 </element>
 <element name="GND" library="testpad" package="B2,54" value="PTR1B2,54" x="71.3" y="11.6">
 <attribute name="TP_SIGNAL_NAME" value="" x="71.3" y="11.6" size="1.778" layer="27" display="off"/>
@@ -8499,6 +8499,9 @@ design rules under a new name.</description>
 <element name="U$1" library="Mine" package="SUSF-XSM" value="" x="51.3015" y="40.865"/>
 <element name="C34" library="resistor" package="C0603" value="100nF" x="52.6415" y="29.6545" smashed="yes" rot="R270">
 <attribute name="NAME" x="53.975" y="29.845" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="C35" library="resistor" package="C0603" value="10nF" x="16.7005" y="34.417" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.9385" y="32.4485" size="0.8128" layer="25" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -8585,7 +8588,7 @@ design rules under a new name.</description>
 <via x="18.8" y="24.8" extent="1-16" drill="0.3"/>
 <via x="20.2" y="29.4" extent="1-16" drill="0.3"/>
 <via x="17.5" y="27.1" extent="1-16" drill="0.3"/>
-<via x="19.3" y="35.8" extent="1-16" drill="0.3"/>
+<via x="19.3" y="32.4345" extent="1-16" drill="0.3"/>
 <via x="19.3" y="31.6" extent="1-16" drill="0.3"/>
 <via x="0.8" y="22" extent="1-16" drill="0.3"/>
 <contactref element="FB1" pad="2"/>
@@ -8676,11 +8679,11 @@ design rules under a new name.</description>
 <via x="18.4" y="33.3" extent="1-16" drill="0.3"/>
 <via x="19.3" y="33.3" extent="1-16" drill="0.3"/>
 <via x="20.2" y="33.3" extent="1-16" drill="0.3"/>
-<via x="15" y="32" extent="1-16" drill="0.3"/>
-<via x="15.7" y="32" extent="1-16" drill="0.3"/>
-<via x="17.2" y="36.2" extent="1-16" drill="0.3"/>
+<via x="14.8095" y="31.9365" extent="1-16" drill="0.3"/>
+<via x="15.5095" y="31.9365" extent="1-16" drill="0.3"/>
+<via x="17.1365" y="36.454" extent="1-16" drill="0.3"/>
 <via x="17.2" y="37.2" extent="1-16" drill="0.3"/>
-<via x="16.5" y="36.7" extent="1-16" drill="0.3"/>
+<via x="16.3095" y="36.446" extent="1-16" drill="0.3"/>
 <via x="12.5" y="20.5" extent="1-16" drill="0.3"/>
 <via x="12.5" y="19.3" extent="1-16" drill="0.3"/>
 <via x="15.2635" y="18.392" extent="1-16" drill="0.3"/>
@@ -8856,8 +8859,6 @@ design rules under a new name.</description>
 <via x="37.4" y="34.9" extent="1-16" drill="0.3"/>
 <contactref element="GND" pad="TP"/>
 <via x="8.979" y="21.8285" extent="1-16" drill="0.3"/>
-<wire x1="20.6" y1="22.9" x2="19.73" y2="23.82" width="0" layer="19" extent="1-1"/>
-<wire x1="64.085" y1="27.055" x2="65.5" y2="26.9" width="0" layer="19" extent="1-1"/>
 <via x="9.2015" y="16.121" extent="1-16" drill="0.3"/>
 <via x="9.519" y="16.756" extent="1-16" drill="0.3"/>
 <via x="9.773" y="17.4545" extent="1-16" drill="0.3"/>
@@ -8887,6 +8888,9 @@ design rules under a new name.</description>
 <via x="9.155" y="24.3255" extent="1-16" drill="0.3"/>
 <via x="7.9015" y="25.3" extent="1-16" drill="0.3"/>
 <via x="12.33" y="22.865" extent="1-16" drill="0.3"/>
+<contactref element="C35" pad="2"/>
+<wire x1="20.6" y1="22.9" x2="19.73" y2="23.82" width="0" layer="19" extent="1-1"/>
+<wire x1="64.085" y1="27.055" x2="65.5" y2="26.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCCIO">
 <contactref element="C1" pad="1"/>
@@ -9231,14 +9235,16 @@ design rules under a new name.</description>
 <wire x1="21.55" y1="24.05" x2="22.2192" y2="24.05" width="0.15" layer="1"/>
 <wire x1="22.2192" y1="24.05" x2="22.2192" y2="24.074" width="0.15" layer="1"/>
 <contactref element="3V3_RF" pad="TP"/>
-<wire x1="15.1" y1="33.9" x2="16.725" y2="32.275" width="0.3048" layer="1"/>
-<wire x1="16.725" y1="32.275" x2="16.725" y2="30.85" width="0.3048" layer="1"/>
 <wire x1="17.9774" y1="21.3308" x2="17.9774" y2="19.42" width="0.3048" layer="1"/>
 <wire x1="17.9774" y1="19.42" x2="17.82" y2="19.42" width="0.3048" layer="1"/>
 <wire x1="17.9774" y1="19.42" x2="18.89" y2="19.42" width="0.3048" layer="1"/>
 <wire x1="18.968" y1="21.3308" x2="19.476" y2="21.3308" width="0.3048" layer="1"/>
 <wire x1="14.75" y1="20.98" x2="14.74" y2="20.97" width="0.3048" layer="1"/>
 <wire x1="14.74" y1="20.97" x2="14.74" y2="19.95" width="0.3048" layer="1"/>
+<wire x1="16.725" y1="30.85" x2="16.725" y2="31.7255" width="0.3048" layer="1"/>
+<wire x1="16.725" y1="31.7255" x2="15.8115" y2="32.639" width="0.3048" layer="1"/>
+<wire x1="15.8115" y1="32.639" x2="12.5055" y2="32.639" width="0.3048" layer="1"/>
+<wire x1="12.5055" y1="32.639" x2="12.4965" y2="32.63" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="U3" pad="29"/>
@@ -9520,6 +9526,8 @@ design rules under a new name.</description>
 <contactref element="USB_SW" pad="TP"/>
 <wire x1="53.46" y1="33.97" x2="53.46" y2="36.06" width="0.4064" layer="1"/>
 <wire x1="53.46" y1="36.06" x2="55.4" y2="38" width="0.4064" layer="1"/>
+<contactref element="U2" pad="3"/>
+<wire x1="18.3502" y1="34.6254" x2="20.2298" y2="34.6254" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="R3" pad="1"/>
@@ -9694,6 +9702,12 @@ design rules under a new name.</description>
 <via x="53.7845" y="29.1465" extent="1-16" drill="0.3"/>
 <wire x1="53.7845" y1="29.1465" x2="53.4425" y2="28.8045" width="0.4064" layer="1"/>
 <wire x1="53.4425" y1="28.8045" x2="52.6415" y2="28.8045" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$30">
+<contactref element="C35" pad="1"/>
+<contactref element="U2" pad="4"/>
+<wire x1="16.7005" y1="33.567" x2="18.2329" y2="32.0346" width="0.4064" layer="1"/>
+<wire x1="18.2329" y1="32.0346" x2="18.3502" y2="32.0346" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <errors>
