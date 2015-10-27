@@ -11697,10 +11697,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U6" library="phil-ic" deviceset="SIP32509DT-T1-GE3" device=""/>
 <part name="VCC6" library="supply1" deviceset="VCCIO" device=""/>
 <part name="C30" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0603" value="68R"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0603" value="68R"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="68R"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="68R"/>
 <part name="C31" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="C32" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="C33" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
@@ -11711,10 +11711,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="S4" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="S5" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="R10" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
+<part name="R10" library="resistor" deviceset="R-EU_" device="R0603" value="10K"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="FB1" library="resistor" deviceset="R-EU_" device="R0603"/>
